@@ -8,5 +8,6 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
+  <!-- 初始化-->
 
 </web-app>
