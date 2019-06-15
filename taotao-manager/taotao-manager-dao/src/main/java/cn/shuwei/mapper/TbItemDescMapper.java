@@ -2,8 +2,9 @@ package cn.shuwei.mapper;
 
 import cn.shuwei.pojo.TbItemDesc;
 import cn.shuwei.pojo.TbItemDescExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbItemDescMapper {
     int countByExample(TbItemDescExample example);

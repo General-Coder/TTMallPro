@@ -2,8 +2,9 @@ package cn.shuwei.mapper;
 
 import cn.shuwei.pojo.TbOrderItem;
 import cn.shuwei.pojo.TbOrderItemExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbOrderItemMapper {
     int countByExample(TbOrderItemExample example);

@@ -2,13 +2,16 @@ package cn.shuwei.mapper;
 
 import cn.shuwei.pojo.TbOrderShipping;
 import cn.shuwei.pojo.TbOrderShippingExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbOrderShippingMapper {
     int countByExample(TbOrderShippingExample example);
 
     int deleteByExample(TbOrderShippingExample example);
+
+    int deleteByPrimaryKey(String orderId);
 
     int insert(TbOrderShipping record);
 
@@ -16,7 +19,13 @@ public interface TbOrderShippingMapper {
 
     List<TbOrderShipping> selectByExample(TbOrderShippingExample example);
 
+    TbOrderShipping selectByPrimaryKey(String orderId);
+
     int updateByExampleSelective(@Param("record") TbOrderShipping record, @Param("example") TbOrderShippingExample example);
 
     int updateByExample(@Param("record") TbOrderShipping record, @Param("example") TbOrderShippingExample example);
+
+    int updateByPrimaryKeySelective(TbOrderShipping record);
+
+    int updateByPrimaryKey(TbOrderShipping record);
 }
